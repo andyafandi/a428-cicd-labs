@@ -1,26 +1,28 @@
-/* App.css */
 .App {
   text-align: center;
 }
 
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
   color: white;
 }
 
-/* Animasi Kedap-kedip */
-@keyframes blink {
-  0% { opacity: 1; } /* Kelihatan*/
-  50% { opacity: 0; } /* Tidak kelihatan */
-  100% { opacity: 1; } /* Kelihatan lagi */
+.App-title {
+  font-size: 1.5em;
 }
 
-.blinking-text {
-  animation: blink 1s linear infinite; /* Terapkan animasi kedap kedip */
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
